@@ -1,48 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact CodeLingo Tools</title>
-<meta name="description" content="Get in touch with the CodeLingo Tools team.">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — CodeLingo Tools</title>
+  <meta name="description" content="Contact CodeLingo Tools team.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header class="site-header">
-  <div class="brand">CodeLingo Tools</div>
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="json-formatter.html">JSON Formatter</a> |
-    <a href="regex-tester.html">Regex Tester</a> |
-    <a href="base64.html">Base64</a> |
-    <a href="color-picker.html">Color Picker</a> |
-    <a href="about.html">About</a> |
-    <a href="contact.html">Contact</a> |
-    <a href="terms.html">Terms</a>
-  </nav>
-</header>
+  <header class="site-header">
+    <div class="brand">CodeLingo Tools</div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="terms.html">Terms</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main class="container">
-  <section class="card input-card">
-    <div class="card-head">
-      <h1>Contact Us</h1>
-      <p>Send us a message. We’ll get back to you as soon as possible.</p>
-    </div>
-    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-      <label for="name">Name</label>
-      <input id="name" type="text" name="name" required placeholder="Your Name">
-      <label for="email">Email</label>
-      <input id="email" type="email" name="email" required placeholder="Your Email">
-      <label for="message">Message</label>
-      <textarea id="message" name="message" required placeholder="Your Message"></textarea>
-      <button class="btn" type="submit">Send Message</button>
-    </form>
-  </section>
-</main>
+  <main class="container">
+    <section class="card">
+      <div class="card-head"><h1>Contact</h1></div>
+      <p>If you have feedback or want to report an issue, email <a href="mailto:support@codelingotools.com">support@codelingotools.com</a>.</p>
+      <p>Or reach out on social: <strong>@CodeLingoTools</strong></p>
+    </section>
+  </main>
 
-<footer class="site-footer">
-  <div>© <span id="year"></span> CodeLingo Tools.</div>
-</footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <footer class="site-footer">
+    <div>© <span id="year"></span> CodeLingo Tools</div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
