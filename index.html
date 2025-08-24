@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CodeLingo Tools — Home</title>
-<link rel="stylesheet" href="style.css">
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CodeLingo Tools — Home</title>
+  <meta name="description" content="CodeLingo Tools: Free online developer & text tools — Word Checker, JSON Formatter, Regex Tester, Base64, Color Picker. Fast, private, offline." />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header class="site-header">
-  <div class="brand">CodeLingo Tools</div>
-  <nav>
-    <a href="word-counter.html">Word Checker</a>
-    <a href="json-formatter.html">JSON Formatter</a>
-    <a href="regex-tester.html">Regex Tester</a>
-    <a href="base64.html">Base64</a>
-    <a href="color-picker.html">Color Picker</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="terms.html">Terms</a>
-  </nav>
-</header>
-<main class="container">
-  <h1>Welcome to CodeLingo Tools</h1>
-  <p>Access all your frontend developer tools in one place.</p>
-  <ul>
-    <li><a href="word-counter.html">Word Checker</a></li>
-    <li><a href="json-formatter.html">JSON Formatter</a></li>
-    <li><a href="regex-tester.html">Regex Tester</a></li>
-    <li><a href="base64.html">Base64 Encoder/Decoder</a></li>
-    <li><a href="color-picker.html">Color Picker / Gradient</a></li>
-  </ul>
-</main>
-<footer class="site-footer">
-  <div>© <span id="year"></span> CodeLingo Tools</div>
-</footer>
-<script src="script.js"></script>
+  <header class="site-header">
+    <div class="brand">CodeLingo Tools</div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="word-counter.html">Word Checker</a></li>
+        <li><a href="json-formatter.html">JSON Formatter</a></li>
+        <li><a href="regex-tester.html">Regex Tester</a></li>
+        <li><a href="base64.html">Base64</a></li>
+        <li><a href="color-picker.html">Color Picker</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <h1>Welcome to CodeLingo Tools</h1>
+      <p>All your frontend developer and text tools in one fast, private hub. No backend required — everything runs in your browser.</p>
+
+      <ul class="tools-list">
+        <li><a class="btn" href="word-counter.html">Word Checker</a></li>
+        <li><a class="btn" href="json-formatter.html">JSON Formatter</a></li>
+        <li><a class="btn" href="regex-tester.html">Regex Tester</a></li>
+        <li><a class="btn" href="base64.html">Base64 Encoder / Decoder</a></li>
+        <li><a class="btn" href="color-picker.html">Color Picker / Gradient</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>© <span id="year"></span> CodeLingo Tools</div>
+    <nav class="footer-links">
+      <a href="terms.html">Terms</a> • <a href="about.html">About</a> • <a href="contact.html">Contact</a>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
