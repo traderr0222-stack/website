@@ -1,156 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-
-  <!-- SEO Title -->
-  <title>FluxText — Free Online Text Tools | Word Counter, Case Converter & More</title>
-
-  <!-- Meta Description -->
-  <meta name="description" content="FluxText is a free online toolkit offering word counter, character counter, case converter, trim spaces, copy text, and reading time calculator. Fast, private, and works offline.">
-
-  <!-- Keywords -->
-  <meta name="keywords" content="text tools, word counter, character counter, case converter, uppercase lowercase, title case, trim spaces, copy text, reading time calculator, free online text editor">
-
-  <!-- Canonical -->
-  <link rel="canonical" href="https://fluxtext.netlify.app/" />
-
-  <!-- Open Graph (Facebook/LinkedIn) -->
-  <meta property="og:title" content="FluxText — Free Online Text Tools" />
-  <meta property="og:description" content="Word counter, character counter, case converter, reading time calculator and more. Free, private, offline text tools." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourwebsite.com/" />
-  <meta property="og:image" content="https://yourwebsite.com/preview.png" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="FluxText — Free Online Text Tools" />
-  <meta name="twitter:description" content="Word counter, character counter, case converter, and more. Free, private, offline text tools." />
-  <meta name="twitter:image" content="https://yourwebsite.com/preview.png" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-  <!-- Fonts & CSS -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Structured Data (Schema.org for SEO) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "FluxText",
-    "url": "https://yourwebsite.com/",
-    "description": "FluxText is a free online text toolkit with word counter, character counter, case converter, trim spaces, copy text, and reading time calculator.",
-    "applicationCategory": "UtilityApplication",
-    "operatingSystem": "All",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "creator": {
-      "@type": "Organization",
-      "name": "FluxText"
-    }
-  }
-  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeLingo Tools — Home</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Sticky Header -->
-  <header class="site-header">
-    <div class="brand">
-      <!-- Unique logo -->
-      <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
-        <defs><linearGradient id="g" x1="0" x2="1">
-          <stop offset="0" stop-color="#10b981"/><stop offset="1" stop-color="#6366f1"/>
-        </linearGradient></defs>
-        <rect x="2" y="3" width="20" height="18" rx="4" fill="url(#g)"/>
-        <path d="M6 8h12M6 12h7M6 16h9" stroke="white" stroke-width="2" stroke-linecap="round"/>
-      </svg>
-      <span>FluxText</span>
-    </div>
-    <div class="badges">
-      <span class="badge">Private</span>
-      <span class="badge">Offline</span>
-    </div>
-  </header>
-
-  <!-- Main Grid -->
-  <main class="container">
-    <!-- Input Card -->
-    <section class="card input-card" aria-labelledby="label-input">
-      <div class="card-head">
-        <h1 id="label-input">Free Online Text Tools</h1>
-        <p>Paste or type below for instant analysis and text transformations</p>
-      </div>
-      <label for="text" class="sr-only">Text area</label>
-      <textarea id="text" placeholder="Type your text here..." aria-label="Text input area"></textarea>
-
-      <!-- Tools -->
-      <div class="tool-row">
-        <button class="btn" data-ripple onclick="toUpper()">A↑ UPPERCASE</button>
-        <button class="btn" data-ripple onclick="toLower()">a↓ lowercase</button>
-        <button class="btn" data-ripple onclick="toTitle()">H Title Case</button>
-        <button class="btn" data-ripple onclick="removeSpaces()">⇱⇲ Trim Spaces</button>
-        <button class="btn" data-ripple onclick="copyText()">⧉ Copy</button>
-        <button class="btn danger" data-ripple onclick="clearText()">🗑 Clear</button>
-      </div>
-    </section>
-
-    <!-- Stats Column -->
-    <aside class="stats-col">
-      <section class="card">
-        <div class="card-head">
-          <h2>Live Stats</h2>
-          <p>Updates as you type</p>
-        </div>
-        <div class="stats-grid">
-          <div class="stat k-blue">
-            <div class="k-label">Words</div>
-            <div class="k-value" id="k-words">0</div>
-          </div>
-          <div class="stat k-green">
-            <div class="k-label">Characters</div>
-            <div class="k-value" id="k-chars">0</div>
-          </div>
-          <div class="stat k-violet">
-            <div class="k-label">No-space Chars</div>
-            <div class="k-value" id="k-chars-ns">0</div>
-          </div>
-          <div class="stat k-amber">
-            <div class="k-label">Paragraphs</div>
-            <div class="k-value" id="k-paras">0</div>
-          </div>
-        </div>
-      </section>
-
-      <section class="card">
-        <div class="card-head">
-          <h2>Reading Time</h2>
-          <p>Based on 200 wpm</p>
-        </div>
-        <div class="reading" id="k-read">0 min</div>
-      </section>
-    </aside>
-  </main>
-
-  <!-- Footer with internal links -->
-  <footer class="site-footer">
-    <div>© <span id="year"></span> FluxText. All processing happens locally in your browser.</div>
-    <nav class="footer-links" aria-label="Quick Links">
-      <a href="word-counter.html">Word Counter</a> |
-      <a href="case-converter.html">Case Converter</a> |
-      <a href="remove-spaces.html">Remove Spaces</a> |
-      <a href="character-counter.html">Character Counter</a>
-    </nav>
-
-  </footer>
-
-  <script src="script.js"></script>
+<header class="site-header">
+  <div class="brand">CodeLingo Tools</div>
+  <nav>
+    <a href="word-counter.html">Word Checker</a>
+    <a href="json-formatter.html">JSON Formatter</a>
+    <a href="regex-tester.html">Regex Tester</a>
+    <a href="base64.html">Base64</a>
+    <a href="color-picker.html">Color Picker</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="terms.html">Terms</a>
+  </nav>
+</header>
+<main class="container">
+  <h1>Welcome to CodeLingo Tools</h1>
+  <p>Access all your frontend developer tools in one place.</p>
+  <ul>
+    <li><a href="word-counter.html">Word Checker</a></li>
+    <li><a href="json-formatter.html">JSON Formatter</a></li>
+    <li><a href="regex-tester.html">Regex Tester</a></li>
+    <li><a href="base64.html">Base64 Encoder/Decoder</a></li>
+    <li><a href="color-picker.html">Color Picker / Gradient</a></li>
+  </ul>
+</main>
+<footer class="site-footer">
+  <div>© <span id="year"></span> CodeLingo Tools</div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
-
