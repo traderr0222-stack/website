@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Regex Tester - CodeLingo Tools</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Regex Tester — CodeLingo Tools</title>
+  <meta name="description" content="Test regular expressions online — find matches and debug patterns.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header class="site-header">
-  <div class="brand">CodeLingo Tools</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="word-counter.html">Word Checker</a>
-    <a href="json-formatter.html">JSON Formatter</a>
-    <a href="base64.html">Base64</a>
-    <a href="color-picker.html">Color Picker</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="terms.html">Terms</a>
-  </nav>
-</header>
-<main class="container">
-  <h1>Regex Tester</h1>
-  <input id="regex-pattern" placeholder="Enter regex pattern">
-  <textarea id="regex-text" placeholder="Enter text to test"></textarea>
-  <div class="tool-row">
-    <button class="btn" onclick="testRegex()">Test</button>
-    <button class="btn" onclick="copyRegex()">Copy</button>
-    <button class="btn danger" onclick="clearRegex()">Clear</button>
-  </div>
-  <pre id="regex-output"></pre>
-</main>
-<footer class="site-footer">
-  <div>© <span id="year"></span> CodeLingo Tools</div>
-</footer>
-<script src="script.js"></script>
+  <header class="site-header">
+    <div class="brand">CodeLingo Tools</div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="word-counter.html">Word Checker</a></li>
+        <li><a href="json-formatter.html">JSON Formatter</a></li>
+        <li><a href="regex-tester.html">Regex Tester</a></li>
+        <li><a href="base64.html">Base64</a></li>
+        <li><a href="color-picker.html">Color Picker</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card input-card">
+      <div class="card-head"><h1>Regex Tester</h1></div>
+
+      <input id="regex-pattern" placeholder="Enter regex pattern (without / /) e.g. \d+" aria-label="Regex pattern" />
+      <textarea id="regex-text" placeholder="Enter text to test against" aria-label="Text to test"></textarea>
+
+      <div class="tool-row">
+        <button class="btn" id="btn-regex-test">Test</button>
+        <button class="btn" id="btn-regex-copy">Copy Matches</button>
+        <button class="btn danger" id="btn-regex-clear">Clear</button>
+      </div>
+
+      <pre id="regex-output" class="output"></pre>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>© <span id="year"></span> CodeLingo Tools</div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
