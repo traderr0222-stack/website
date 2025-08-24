@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Word Checker — CodeLingo Tools</title>
+  <meta name="description" content="Word Checker: count words & characters, convert case, remove extra spaces, and estimate reading time.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">CodeLingo Tools</div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="word-counter.html">Word Checker</a></li>
+        <li><a href="json-formatter.html">JSON Formatter</a></li>
+        <li><a href="regex-tester.html">Regex Tester</a></li>
+        <li><a href="base64.html">Base64</a></li>
+        <li><a href="color-picker.html">Color Picker</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container grid-2cols">
+    <section class="card input-card">
+      <div class="card-head">
+        <h1>Word Checker</h1>
+        <p>Paste or type text below — everything runs locally in your browser.</p>
+      </div>
+
+      <textarea id="text" placeholder="Type or paste your text here..." aria-label="Text input"></textarea>
+
+      <div class="tool-row">
+        <button class="btn" id="btn-upper">A↑ UPPERCASE</button>
+        <button class="btn" id="btn-lower">a↓ lowercase</button>
+        <button class="btn" id="btn-title">Title Case</button>
+        <button class="btn" id="btn-trim">Trim Spaces</button>
+        <button class="btn" id="btn-copy">Copy</button>
+        <button class="btn danger" id="btn-clear">Clear</button>
+      </div>
+    </section>
+
+    <aside class="card stats-col">
+      <div class="card-head"><h2>Live Stats</h2></div>
+      <div class="stats-grid">
+        <div class="stat k-blue"><div class="k-label">Words</div><div class="k-value" id="k-words">0</div></div>
+        <div class="stat k-green"><div class="k-label">Characters</div><div class="k-value" id="k-chars">0</div></div>
+        <div class="stat k-violet"><div class="k-label">No-space Chars</div><div class="k-value" id="k-chars-ns">0</div></div>
+        <div class="stat k-amber"><div class="k-label">Paragraphs</div><div class="k-value" id="k-paras">0</div></div>
+      </div>
+
+      <div class="card-head"><p>Reading Time (200 wpm)</p></div>
+      <div class="reading" id="k-read">0 min</div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div>© <span id="year"></span> CodeLingo Tools</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
