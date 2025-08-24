@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word Checker - CodeLingo Tools</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">CodeLingo Tools</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="json-formatter.html">JSON Formatter</a>
+    <a href="regex-tester.html">Regex Tester</a>
+    <a href="base64.html">Base64</a>
+    <a href="color-picker.html">Color Picker</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="terms.html">Terms</a>
+  </nav>
+</header>
+<main class="container">
+  <h1>Word Checker</h1>
+  <textarea id="text" placeholder="Type or paste text here"></textarea>
+  <div class="tool-row">
+    <button class="btn" onclick="toUpper()">UPPERCASE</button>
+    <button class="btn" onclick="toLower()">lowercase</button>
+    <button class="btn" onclick="toTitle()">Title Case</button>
+    <button class="btn" onclick="removeSpaces()">Trim Spaces</button>
+    <button class="btn" onclick="copyText()">Copy</button>
+    <button class="btn danger" onclick="clearText()">Clear</button>
+  </div>
+  <div id="stats">
+    <p>Words: <span id="k-words">0</span></p>
+    <p>Characters: <span id="k-chars">0</span></p>
+    <p>No-space Chars: <span id="k-chars-ns">0</span></p>
+    <p>Paragraphs: <span id="k-paras">0</span></p>
+    <p>Reading Time: <span id="k-read">0 min</span></p>
+  </div>
+</main>
+<footer class="site-footer">
+  <div>© <span id="year"></span> CodeLingo Tools</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

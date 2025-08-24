@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Picker / Gradient - CodeLingo Tools</title>
+<meta name="description" content="Pick colors or generate gradients online with CodeLingo Tools. Fast and offline.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">CodeLingo Tools</div>
+  <nav>
+    <a href="word-counter.html">Word Checker</a>
+    <a href="json-formatter.html">JSON Formatter</a>
+    <a href="regex-tester.html">Regex Tester</a>
+    <a href="base64.html">Base64</a>
+    <a href="color-picker.html">Color Picker</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="terms.html">Terms</a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="card input-card">
+    <div class="card-head"><h1>Color Picker / Gradient Generator</h1></div>
+    <input type="color" id="color1" value="#ff0000">
+    <input type="color" id="color2" value="#0000ff">
+    <div class="tool-row">
+      <button class="btn" onclick="generateGradient()">Generate Gradient</button>
+      <button class="btn danger" onclick="clearGradient()">Clear</button>
+    </div>
+    <div id="gradient-output" style="height:120px; border-radius:12px; margin-top:12px;"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div>© <span id="year"></span> CodeLingo Tools</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

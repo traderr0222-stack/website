@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JSON Formatter - CodeLingo Tools</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">CodeLingo Tools</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="word-counter.html">Word Checker</a>
+    <a href="regex-tester.html">Regex Tester</a>
+    <a href="base64.html">Base64</a>
+    <a href="color-picker.html">Color Picker</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="terms.html">Terms</a>
+  </nav>
+</header>
+<main class="container">
+  <h1>JSON Formatter / Validator</h1>
+  <textarea id="json-input" placeholder='Paste JSON here'></textarea>
+  <div class="tool-row">
+    <button class="btn" onclick="formatJSON()">Format</button>
+    <button class="btn" onclick="copyJSON()">Copy</button>
+    <button class="btn danger" onclick="clearJSON()">Clear</button>
+  </div>
+  <pre id="json-output"></pre>
+</main>
+<footer class="site-footer">
+  <div>© <span id="year"></span> CodeLingo Tools</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

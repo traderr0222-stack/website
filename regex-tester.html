@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regex Tester - CodeLingo Tools</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">CodeLingo Tools</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="word-counter.html">Word Checker</a>
+    <a href="json-formatter.html">JSON Formatter</a>
+    <a href="base64.html">Base64</a>
+    <a href="color-picker.html">Color Picker</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="terms.html">Terms</a>
+  </nav>
+</header>
+<main class="container">
+  <h1>Regex Tester</h1>
+  <input id="regex-pattern" placeholder="Enter regex pattern">
+  <textarea id="regex-text" placeholder="Enter text to test"></textarea>
+  <div class="tool-row">
+    <button class="btn" onclick="testRegex()">Test</button>
+    <button class="btn" onclick="copyRegex()">Copy</button>
+    <button class="btn danger" onclick="clearRegex()">Clear</button>
+  </div>
+  <pre id="regex-output"></pre>
+</main>
+<footer class="site-footer">
+  <div>© <span id="year"></span> CodeLingo Tools</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Base64 Encode/Decode - CodeLingo Tools</title>
+<meta name="description" content="Encode or decode Base64 strings online with CodeLingo Tools. Fast and offline.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">CodeLingo Tools</div>
+  <nav>
+    <a href="word-counter.html">Word Checker</a>
+    <a href="json-formatter.html">JSON Formatter</a>
+    <a href="regex-tester.html">Regex Tester</a>
+    <a href="base64.html">Base64</a>
+    <a href="color-picker.html">Color Picker</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="terms.html">Terms</a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="card input-card">
+    <div class="card-head"><h1>Base64 Encode / Decode</h1></div>
+    <textarea id="base64-input" placeholder="Enter text"></textarea>
+    <div class="tool-row">
+      <button class="btn" onclick="encodeBase64()">Encode</button>
+      <button class="btn" onclick="decodeBase64()">Decode</button>
+      <button class="btn danger" onclick="clearBase64()">Clear</button>
+    </div>
+    <pre id="base64-output"></pre>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div>© <span id="year"></span> CodeLingo Tools</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
